@@ -1,5 +1,4 @@
-g = (param, ret) ->
-  val = ret ? 'g'
+g = (param, val = 'g') ->
   return val + param if param?
   (param) ->
     val += 'o'
